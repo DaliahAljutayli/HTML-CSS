@@ -1,0 +1,159 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Images,Link and Table</title>
+
+    <style>
+        img { width:110px;
+              height:110px;
+        }
+
+        table { width:90%;
+            border:1px solid Black; 
+            border-spacing:15px;          }
+
+
+        th {
+                border: 2px dotted Green;
+                padding: 10px;
+                text-align: Left;
+            }
+        td {border: 1px double lightGreen; }
+
+        caption { padding:10px;
+        }
+        /* .Hcol { background-color:cadetblue;
+        }
+        */
+
+        table#MyTable tr:nth-child(even) {
+            background-color: #b6ff00;
+        }
+        /* table#MyTable tr:nth-child(odd) {
+            background-color:#00ff90;
+        } */
+
+       dt, dd{ display:inline;
+        }
+
+    </style>
+
+</head>
+<body>
+       <h1>HTML Tables, Images, Lists: </h1>
+       <table id="MyTable">
+           <caption>Lists, Images inside Table</caption>
+
+           <!--Head Row-->
+           <tr>
+               <th>
+                   <h2 class="Hcol">Column 1</h2class="Hcol">
+               </th>
+               <th>
+                   <h2>Column 2</h2>
+               </th>
+               <th>
+                   <h2 class="Hcol">Column 3</h2>
+               </th>
+           </tr>
+
+           <!--Row 1-->
+           <tr>
+               <!--1 Column-->
+               <td>
+                   <h3>Hot Drinks:</h3>
+                   <ul style="list-style-type:disc;">
+                       <li>Coffe</li>
+                       <ol type="I">
+                           <!-- i for Lowcase order-->
+                           <li>Cappuccino</li>
+                           <li>Espresso</li>
+                           <li>Macchiato</li>
+                           <!--Desciption List-->
+                           <dl>
+                               <dt>Coffe:</dt>
+                               <dd>a black hot drink</dd>
+                           </dl>
+                       </ol>
+                       <li>Tea</li>
+                       <li>Milk</li>
+                       <br />
+                     
+                   </ul>
+                   <h3>Cold Drinks:</h3>
+                   <ul style="list-style-type:circle">
+                       <li>Cola</li>
+                       <li>Pepse</li>
+                       <li>7 UP</li>
+                   </ul>
+               </td>
+               <!--2 Column-->
+               <td>
+                   <h3>Ice Cold Drinks:</h3>
+                   <ul style="list-style-type:square">
+                       <li>IcedCoffee</li>
+                       <li>Minty Limeade Smoothie</li>
+                       <li>Milkshake</li>
+                       
+                       <p style="color:white;">Smoothie Drinks:</p>
+                       <ol type="A">
+                           <!-- a for small order-->
+                           <li>Strawberry-Banana</li>
+                           <li>Raspberry-Orange</li>
+                           <li>Mint-Lemon</li>
+                       </ol>
+                   </ul>
+                   <h3>Juice Drinks:</h3>
+                   <ol type="1">
+                       <li>Apple</li>
+                       <li>Lemon</li>
+                       <li>Orange</li>
+                   </ol>
+               </td>
+             
+           </tr>
+
+           <!--Row 2-->
+           <tr>
+               <!--only 1 Column-->
+               <td colspan="3"><!--Cell that spans two columns-->
+                   <!--Floating Images-->
+                   <p>
+                       <img src="https://www.w3schools.com/html/smiley.gif" style="float:right; width:50px;height:50px;" />
+                       A paragraph with a floating image.<br /> A paragraph with a floating image.<br /> A paragraph with a floating image.
+                   </p>
+               </td>
+           </tr>
+
+           <!--Row 3-->
+           <tr>
+               <!--1 Column-->
+               <td>
+                   <!--Animated Images-->
+                   <img src="https://media.giphy.com/media/l4Ki4biBSwhjyrS48/giphy.gif" alt="Red" />
+               </td>
+               <!--2 Column-->
+               <td>
+                   <!--Image Maps-->
+                   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRJa3u4DjBaHbkqb-KDVIIkifhsiz_Tej3iyTTBeTGcmezhfRWb&usqp=CAU" alt="rose" usemap="#Rose" title="Click at me" />
+
+                   <map name="Rose">
+                       <!--coords=x1,y1,x2,y2-->
+                       <area shape="rect" coords="40,101,120,150" alt="Stem" href="data:image/jpeg;base64,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" />
+                       <area shape="rect" coords="30,30,90,90" alt="Petal" href="http://t3.gstatic.com/images?q=tbn:ANd9GcT7k_ML9Vkn3BPSGP1CR97tr_KVWP_mSdUV0M3XgIQL-MReN84NhVuGtjYd6DIVFaKBtM0ZUXhSDAPZzsaMSJk" />
+                   </map>
+                   <br />
+               </td>
+           </tr>
+
+
+
+
+
+       </table>
+
+
+</body>
+</html>
