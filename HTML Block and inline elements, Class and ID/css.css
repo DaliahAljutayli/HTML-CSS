@@ -1,0 +1,27 @@
+﻿body {
+    padding: 15px;
+    border: 1px solid #928e77;
+}
+
+.TheClass {
+    padding: 5px;
+    margin:10px;
+    color: #60965b;
+    background-color: #f6eac3;
+}
+
+h1 { font-style:italic;
+}
+span {
+    background-color: #b8dfb7;
+}
+
+#Buraydah {
+    padding:5px;
+    border: 2px solid white;
+}
+
+#Unaizah {
+    padding: 5px;
+    border: 4px double white;
+}
