@@ -1,0 +1,47 @@
+﻿*{
+    box-sizing: border-box;
+}
+
+header {
+            background-color: #900C3F;
+            color: white;
+            font-size: 30px;
+            text-align: center;
+            padding: 25px;
+        }
+
+section {
+    background-color: #f2f6f5;
+    padding: 30px;
+    float: left;
+    width: 25%;
+    height: 400px;
+}
+
+ul {    padding:0px;}
+
+article {
+    width: 75%;
+    height: 400px;
+    background-color: white;
+    padding: 30px;
+    float: right;
+
+}
+
+footer {
+    background-color: #C70039;
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    padding: 5px;
+}
+
+
+
+@media (max-width: 600px) {
+    section, article {
+        width: 100%;
+        height: auto;
+    }
+}
