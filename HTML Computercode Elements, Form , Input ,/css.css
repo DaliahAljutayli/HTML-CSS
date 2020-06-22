@@ -1,0 +1,47 @@
+﻿body {
+    background: url(images.jpg);
+    /*background-size: 150px 300px;*/
+    background-size: 100% 700px;
+    width: 90%;
+}
+
+fieldset {
+    background: #fdfff2;
+    border: 2px solid #abcdef;
+}
+
+div {
+    width: 40%;
+    padding-left:150px;
+    margin:5px;
+}
+
+legend {
+    text-align: center;
+    color: #44525f;
+    font-size: 17px;
+    padding: 5px;
+}
+
+label, input, select {
+    color: #123456;
+    padding-top: 3px;
+    margin: 5px;
+}
+/*____________________________________________________*/
+
+    input[type=submit] {
+        width: 20%;
+        background-color: #123456;
+        color: #e1fcff;
+        padding: 14px 20px;
+        margin: 8px 0px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+
+p {
+    color: #827f99;
+}

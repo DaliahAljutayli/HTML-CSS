@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css.css"/>
+    <title></title>
+</head>
+<body>
+    <form action="/action.php" method="POST" autocomplete="on">
+
+        <div>
+            <fieldset>
+                <legend>Step1: Your details</legend>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required /> <br />
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required /><br />
+
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="phone" maxlength="10" placeholder="05xxxxxxxx" required /> <br />
+            </fieldset>
+        </div>
+
+        <div>
+            <fieldset>
+                <legend>Step2: Delivery address</legend>
+                <label>Address</label>
+                <textarea name="textarea" rows="3" ></textarea> <br />
+
+                <lable for="city">City</lable>
+                <select id="city" name="city">
+                    <option value="Buraydah">Buraydah</option>
+                    <option value="Unaizah">Unaizah</option>
+                    <option value="Ar Rass">Ar Rass</option>
+                    <option value="Al Bukayriyah">Al Bukayriyah</option>
+                </select> <br />
+
+                <label for="post">Post Code</label>
+                <input type="number" id="post" placeholder="xxxx"/>
+
+            </fieldset>
+
+        </div>
+
+
+        <div>
+            <fieldset>
+                <legend>Step3: Card details</legend>
+                <input type="radio" id="visa" name="card" value="visa"/>
+                <label for="visa">VISA</label> <br />
+
+                <input type="radio" id="mada" name="card" value="mada"/>
+                <label for="mada">Mada Card</label><br />
+
+
+                <label for="cardNumber">Card Number</label>
+                <input type="text" id="cardNumber" name="cardNumber" required /><br />
+
+                <label for="exp">Exp Date</label>
+                <input type="date" id="exp" name="exp" /><br />
+
+                <label for="SCode">Securty Code</label>
+                <input type="text" id="SCode" name="SCode" maxlength="4" required />
+            </fieldset>
+        </div>
+
+        <div>
+            <input type="checkbox" id="checkbox" name="checkbox" value="agree" />
+            <label for="checkbox">Want to receive sales and product notifications by email.</label><br />
+            <!--<button type="button" onclick="alert('The purchase is complete')">Buy It!</button>-->
+            <input type="submit" name="submit" id="submit" value="Buy It" />
+            <br />
+            <p>*Press <kdb>ctrl+R</kdb> to refresh web page!</p>
+            <p>*Any <samp>Error</samp> please contact</p>
+        </div>
+    </form>
+
+
+</body>
+</html>
