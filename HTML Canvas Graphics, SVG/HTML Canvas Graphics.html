@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>HTML Canvas Graphics</title>
+</head>
+<body>
+    <canvas id="MyCanvas" width="500" height="100" style="border:1px solid #c3c3c3;">
+        Your browser does not support the HTML canvas tag.
+    </canvas>
+
+
+    <script>
+        var c = document.getElementById("MyCanvas");
+        var rec1 = line1 = line2 = cir = txt = c.getContext("2d");
+        //var line1 = c.getContext("2d");
+        //var line2 = c.getContext("2d");
+        //var cir = c.getContext("2d");
+
+        var rd = rec1.createLinearGradient(0, 0, 200, 0);
+        var gr = cir.createRadialGradient(75, 50, 5, 90, 60, 100);
+
+
+        rd.addColorStop(0, "#83072c");
+        rd.addColorStop(1, "#410316");
+
+        gr.addColorStop(0, "#db0c4a");
+        gr.addColorStop(1, " #e7f23a");
+
+
+        rec1.fillStyle = rd;
+        rec1.fillRect(0, 0, 500, 100);
+
+        line1.moveTo(0, 0);
+        line1.lineTo(200, 100);
+        line1.strokeStyle = "#de245c";
+        line1.stroke();
+
+        line2.moveTo(10, 0);
+        line2.lineTo(210, 100);
+        line2.strokeStyle = gr;
+        line2.stroke();
+
+        cir.beginPath();
+        cir.arc(45, 64, 35, 0, 2 * Math.PI);
+        cir.strokeStyle = gr;
+        cir.stroke();
+
+        txt.font = "100px Script";
+        txt.strokeStyle = "#fbe6ec";
+        txt.strokeStyle = gr;
+        txt.strokeText("Daliah", 180, 79);
+    </script>
+     
+    <hr />
+
+    <svg width="100" height="100">
+        <circle cx="50" cy="50" r="40" stroke="#3b5998" stroke-width="4" fill="#dfe3ee" />
+
+        your browser does not support inline SVG!!!
+    </svg>
+
+
+    <svg>
+        <rect width="100" height="100" style="fill:#f7f7f7;stroke-width:4;stroke:#8b9dc3"
+              x="5" y="5" rx="20" ry="25" opacity="0.5" />
+
+        your browser does not support inline SVG!!!
+    </svg>
+    <hr />
+    <svg width="500" height="500">
+        <polygon points="100,10 40,198 190,78 10,78 160,198" 
+             style="fill:#8b9dc3;stroke:#dfe3ee;stroke-width:4; fill-rule:evenodd" />
+
+        your browser does not support inline SVG!!!
+    </svg>
+
+</body>
+</html>
