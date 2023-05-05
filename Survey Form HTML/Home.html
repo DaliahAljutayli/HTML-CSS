@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>Survey Form</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>استمارة تسجيل</h1>
+<form action="/actionPage.php" method="post">
+<fieldset> <legend>البيانات الشخصية:</legend>
+	<label for="fname">الاسم الأول</label><br>
+	<input type="text" id="fname" name"fname"><br>
+	
+	<label for="lname">الاسم الأخير</label><br>
+	<input type="text" id="lname" name"lname"><br>
+	
+	<label for="age">العمر</label><br>
+	<input type="number" id="age" name"age"><br>
+	
+	<label for="email">الايميل</label><br>
+	<input type="email" id="email" name="email"><br><br>
+	<!-- ......................................-->
+<div id="stat">
+	<label for="status">الحالة الاجتماعية</label><br>
+	
+	<input type="radio" id="married" name="statu" value="Married">
+	<label for="married">متزوج/متزوجة</label><br>
+	
+	<input type="radio" id="divorced" name="statu" value="divorced">
+	<label for="divorced">مطلق/مطلقة<label><br>
+	
+	<input type="radio" id="widower" name="statu" value="widower">
+	<label for="widower">أرمل/أرملة<label><br>
+	
+	<input type="radio" id="single" name="statu" value="single">
+	<label for="single">أعزب/عزباء<label><br><br>
+</div>
+
+	<!-- ......................................-->
+	<label for="qualification">أخر مؤهل تعليمي</label><br>
+	<select id="qualification" name="qualification">
+		<option value="highschool">ثانوي</option>
+		<option value="bachelor">البكالوريوس</option>
+		<option value="higherdiploma">دبلوم عالي</option>
+		<option value="master">الماجستير</option>
+		<option value="phd">الدكتوراه</option>
+	</select><br><br>
+	
+	<input type="submit" value="ارسال">
+	<input type="reset"><br>
+	</fieldset>
+</form>
+	<p>يرجى التأكد من سلامة المعلومات، قبل الأرسال</p>
+
+</body>
+</html>

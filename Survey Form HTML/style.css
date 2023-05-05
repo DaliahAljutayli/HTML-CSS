@@ -1,0 +1,61 @@
+*{
+	box-sizing:border-box;
+}
+body{
+	background-color: #ccefff;	
+	  text-align: center;
+
+}
+
+
+
+fieldset{
+		width:80%;
+		margin-left:12%;
+		background-color: #e5f9ff;	
+
+}
+
+input{
+	width:60%;
+	border: 1px solid  #00aaff;
+
+}
+
+input[type=text]:focus{
+	border: 2px solid  #cceeff;
+}
+
+
+
+input[type=radio]{
+	display:block;
+	width:12px;
+	position:absolute;
+}
+
+#stat{
+	padding-left:40%;
+	width:60%;
+}
+
+select{
+	width:50%;
+	padding: 16px 20px;
+	border:none;
+	background-color:#cceeff;
+    text-align: center;
+
+}
+
+input[type=submit],input[type=reset]{
+	width:40%;
+	background-color:#cceeff;
+	padding:14px 20px;
+	border:none;
+	cursor:pointer;
+}
+input[type=submit]:hover,input[type=reset]:hover{
+	background-color:#99ddff
+	
+}
